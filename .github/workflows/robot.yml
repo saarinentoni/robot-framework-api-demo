@@ -22,7 +22,7 @@ jobs:
 
       - name: Run Robot
         run: |
-          robot -d results tests
+          robot -d results -x output.xml tests
 
       - name: Upload results
         uses: actions/upload-artifact@v4
